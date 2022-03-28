@@ -79,8 +79,7 @@ context.response.print "#{countdown(date)}"
 context.response.content_type = "text/html"
 #context.response.print File.read "html5-boilerplate/index.html"
 context.response.print File.read "index.html"
-#context.response.print HTML.unescape("<iframe width="100%" height="480px" src="https://www.watchisup.com/custom-timer/embed/novoa-2022-04-07-01-01?backgroundcolor=&color=" frameborder="0" allowfullscreen></iframe>")
-
+#context.response.print HTML.unescape("")
 #Large html
 #File.open "index.html" do |file|
 #	IO.copy file, context.response
