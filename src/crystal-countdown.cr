@@ -65,7 +65,8 @@ def countdown(date : Time)
 		#puts "Countdown time: ", t.abs
 		#t.abs.to_s("%F")
 	  sleep 1
-	  return "Novoa: #{timer.abs}"
+	  #{timer.abs}
+	  return "Novoa: #{timer.days} dias, #{timer.hours} horas,  #{timer.minutes} mintos,  #{timer.seconds} segundos."
 	end
 end
 
@@ -76,9 +77,9 @@ require "html"
 server = HTTP::Server.new do |context|
 context.response.content_type = "text/plain"
 context.response.print "#{countdown(date)}"
-context.response.content_type = "text/html"
+#context.response.content_type = "text/html"
 #context.response.print File.read "html5-boilerplate/index.html"
-context.response.print File.read "index.html"
+#context.response.print File.read "index.html"
 #context.response.print HTML.unescape("")
 #Large html
 #File.open "index.html" do |file|
