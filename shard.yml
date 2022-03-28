@@ -1,0 +1,13 @@
+name: crystal-countdown
+version: 0.1.0
+
+authors:
+  - Rabioli <Rabioli@github.com>
+
+targets:
+  crystal-countdown:
+    main: src/crystal-countdown.cr
+
+crystal: 1.3.2
+
+license: BSD-3
